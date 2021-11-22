@@ -11,3 +11,5 @@ export const fetchJokeBySearchText = () =>
       return response.json();
     }
   });
+
+export const maxValueForSlice = arr => Math.floor(Math.random() * (arr.length - 5 + 1)) + 5;

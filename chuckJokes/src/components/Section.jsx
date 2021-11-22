@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { fetchJokebyCategory, fetchJokeBySearchText } from '../gateWay/gateWay';
+import { fetchJokebyCategory, fetchJokeBySearchText, maxValueForSlice } from '../gateWay/gateWay';
 
 const Section = () => {
   const [category, setCategory] = useState('');
@@ -28,7 +28,7 @@ const Section = () => {
         jokes.value.filter(el => el.joke.toLowerCase().includes(inputText.toLowerCase())),
       )
       .then(res => {
-        const max = Math.floor(Math.random() * (res.length - 4 + 1)) + 4;
+        const max = maxValueForSlice(res);
         const min = max - 5;
         const topJokes = res.slice(min, max);
         setRandomJokes(topJokes);
