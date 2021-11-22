@@ -1,11 +1,10 @@
 # ReactChuck
 
-## [ReactChuck](https://rmorhub.github.io/reactChuck/)
+## [ReactChuck](https://hopeful-clarke-b9e76c.netlify.app/)
 
 ## [Git Hub Page](https://github.com/Rmorhub)
 
 ### [ReactChuck-github-page](https://github.com/Rmorhub/reactChuck)
-
 
 ### The tech stack is:
 
@@ -18,4 +17,5 @@
 - [React](https://en.reactjs.org/)
 
 ### Author:
+
 - Stanislav Rozhuk
