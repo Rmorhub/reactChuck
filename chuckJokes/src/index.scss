@@ -49,15 +49,13 @@ body {
   }
 
   &__random-jokes {
-    height: 100px;
     line-height: 30px;
     width: 1140px;
     margin: auto;
     margin-top: 40px;
-    &_item {
-      list-style-type: none;
-      margin-top: 20px;
-    }
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
   }
 }
 
@@ -70,4 +68,15 @@ body {
 .footer {
   height: 100px;
   line-height: 100px;
+}
+
+button {
+  margin-left: 10px;
+  height: 25px;
+  border-radius: 2px;
+}
+
+select {
+  height: 25px;
+  border-radius: 2px;
 }
