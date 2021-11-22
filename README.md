@@ -1,6 +1,6 @@
 # ReactChuck
 
-## [ReactChuck](https://github.com/Rmorhub/reactChuck.git)
+## [ReactChuck](https://rmorhub.github.io/reactChuck/)
 
 ## [Git Hub Page](https://github.com/Rmorhub)
 
