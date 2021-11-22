@@ -1,10 +1,10 @@
-# Calendar-react
+# ReactChuck
 
-## [Calendar-react Netlify](https://youthful-jepsen-c1b826.netlify.app/)
+## [ReactChuck](https://github.com/Rmorhub/reactChuck.git)
 
 ## [Git Hub Page](https://github.com/Rmorhub)
 
-### [Calendar-react-github-page](https://github.com/Rmorhub/reactChuck)
+### [ReactChuck-github-page](https://github.com/Rmorhub/reactChuck)
 
 
 ### The tech stack is:
