@@ -1,20 +1,9 @@
 import React, { useState } from 'react';
+import RandomJokesListItem from './RandomJokesListItem';
 
-import { fetchJokebyCategory, fetchJokeBySearchText, maxValueForSlice } from '../gateWay/gateWay';
+import { fetchJokeBySearchText, maxValueForSlice } from '../gateWay/gateWay';
 
-const Section = () => {
-  const [category, setCategory] = useState('');
-  const [randomJoke, setRandomJoke] = useState('');
-
-  const categoryHandler = event => {
-    setCategory(event.target.value);
-  };
-
-  const randomJokeByCategory = () => {
-    const isRandom = category === '' ? 'nerdy,explicit' : category;
-    fetchJokebyCategory(isRandom).then(joke => setRandomJoke(joke.value.joke));
-  };
-
+const RandomJokes = () => {
   const [inputText, setInputText] = useState('');
   const [randomJokes, setRandomJokes] = useState('');
 
@@ -43,23 +32,10 @@ const Section = () => {
   const isSomeRandomJokes =
     randomJokes.length === 0
       ? notFound
-      : randomJokes.map(el => (
-          <li key={el.id} className="section__random-jokes_item">
-            {el.joke}
-          </li>
-        ));
+      : randomJokes.map(el => <RandomJokesListItem key={el.id} joke={el.joke} />);
 
   return (
-    <section className="section">
-      <div className="section__joke">
-        <select onChange={categoryHandler}>
-          <option value="nerdy,explicit">Random</option>
-          <option value="nerdy">Nerdy</option>
-          <option value="explicit">Explicit</option>
-        </select>
-        <button onClick={randomJokeByCategory}>Get Joke</button>
-      </div>
-      <div className="section__random-joke">{randomJoke}</div>
+    <>
       <div className="section__joke">
         <input
           type="text"
@@ -73,8 +49,8 @@ const Section = () => {
         </button>
       </div>
       <ul className="section__random-jokes">{isSomeRandomJokes}</ul>
-    </section>
+    </>
   );
 };
 
-export default Section;
+export default RandomJokes;
